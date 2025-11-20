@@ -1,6 +1,9 @@
 // eslint.config.js
-import next from "eslint-config-next";
+import nextConfig from "eslint-config-next";
 
 export default [
-  ...next(),
+  {
+    ignores: ["**/node_modules/**", "**/.next/**"],
+  },
+  ...nextConfig(),
 ];
